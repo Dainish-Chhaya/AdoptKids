@@ -1,0 +1,14 @@
+{
+    "register": {
+      "title": "Registro",
+      "name": "Nombre",
+      "username": "Nombre de usuario",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "age": "Edad",
+      "gender": "Género",
+      "mobileNumber": "Número de teléfono",
+      "registerButton": "Registrarse",
+      "ageValidation": "Por favor, ingrese una edad válida mayor a 21."
+    }
+  }

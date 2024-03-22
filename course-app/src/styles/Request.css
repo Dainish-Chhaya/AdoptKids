@@ -1,0 +1,30 @@
+/* .container{
+  margin:50px;
+} */
+
+/* Request.css */
+
+
+
+.request-container {
+  text-align: center;
+  /* padding: 20px; */
+  padding-top:150px ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  align-items: center;
+  height: 70vh; /* 100% viewport height */
+  background-color: black; /* Light blue background */
+}
+
+.request-container h1 {
+  
+  color: white;
+  background-color: black !important;
+}
+
+.request-container p {
+  margin-top: 10px;
+  color: white;
+  background-color: black !important;
+}

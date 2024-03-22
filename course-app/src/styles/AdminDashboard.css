@@ -1,0 +1,45 @@
+.admin-dashboard {
+  background-color: #1f1f1f; /* Dark background color */
+  color: #090808 !important; /* White text color */
+  padding: 20px;
+  text-align: center;
+}
+.admin-dashboard h2 {
+  color: lavenderblush !important;
+  font-size: 40px;
+}
+.dashboard-button {
+  background-color: #4CAF50; /* Green button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dashboard-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dashboard-section h2{
+  background-color: black !important;
+}
+
+.dashboard-section p{
+  color: white;
+}
+
+.dashboard-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

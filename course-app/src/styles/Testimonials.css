@@ -1,0 +1,196 @@
+/* Add the following styles to your Testimonials.css file */
+/* p, h2, label {
+  color: white !important;
+} */
+
+.Testimonials_Container {
+  text-align: center;
+  padding: 50px 0;
+  background-color: black;
+  /* color: white !important; */
+  margin-top: 64px;
+  border-radius: 15px;
+
+}
+
+
+
+.Testimonials_Container h2{
+  color: white !important;
+  font-size: 50px;
+  background-color: black !important;
+}
+
+/* .Testimonials_Container label{
+  color: white !important;
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin-top:20px;
+} */
+
+.Testimonials_Container p{
+  color: #cbc4c4 !important;
+  font-size: 17px;
+}
+
+.Testimonials_Container input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Testimonials_Container textarea{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Testimonials_Container button{
+  background-color: black;
+  color: lavenderblush;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid lavenderblush;
+}
+
+/* h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fffcfc; /* Adjust the color as needed */
+/* } */ */
+
+.flexx {
+  display: flex;
+  justify-content: center;
+}
+
+.Cards {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 400px; /* Adjust the max-width as needed */
+  margin: 0 15px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: #343a40; /* Adjust the background color as needed */
+  color: #000000 !important; /* Adjust the text color as needed */
+  padding: 15px;
+  font-weight: bold;
+  background: lavenderblush;
+
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.background-img {
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Adjust the text color for better visibility on the image */
+}
+
+.card-title {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Slick Slider Dots Styles */
+.slick-dots {
+  bottom: -40px;
+  background: lavenderblush;
+
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000000 !important;
+}
+
+/* Testimonial Submission Form Styles */
+.Testimonials_Container form {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.Testimonials-form-group {
+  margin-bottom: 20px;
+}
+
+.Testimonials-form-group input{
+  width: 534px !important;
+}
+
+/* label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top:20px;
+} */
+
+/* input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
+
+/* 
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+} */
+
+button:hover {
+  background-color: lavenderblush;
+}
+
+/* .padding-top{
+  padding-top: 60px;
+} */
+
+.font-60{
+  font-size: 60px;
+}
+
+.write-your-own-testimonial-margin{
+  margin-top: 100px;
+}
+
+.image img {
+  margin: 30px !important;
+    height: 470px !important;
+    width: 1387px;
+    border-radius: 9px;
+}

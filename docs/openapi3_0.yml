@@ -1,0 +1,116 @@
+openapi: 3.1.0
+info:
+  title: Adoptive Parent API
+  description: RESTful API for getting adoptive parent information based on search criteria.
+  version: '1.0.0'
+servers: 
+  - url: http://localhost:8080
+
+
+
+paths:
+  /api/adoptive-parents:
+    get:
+      summary: Retrieve adoptive parents based on search criteria
+      parameters:
+        - name: ageMin
+          in: query
+          required: false
+          description: Minimum age preference of adoptive parents
+          schema:
+            type: integer
+        - name: ageMax
+          in: query
+          required: false
+          description: Maximum age preference of adoptive parents
+          schema:
+            type: integer
+        - name: gender
+          in: query
+          required: false
+          description: Gender preference of adoptive parents
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/AdoptiveParent"
+        '400':
+          description: Bad request, invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+              example: { error: 'Invalid input' }
+
+components:
+  schemas:
+    AdoptiveParent:
+      type: object
+      properties:
+        parentId:
+          type: string
+          examples: 
+            - 123
+            - 134
+            - 234
+        firstName:
+          type: string
+          examples:
+            - Nidhi
+            - Sam
+            - Dam
+        lastName:
+          type: string
+          examples:
+            - Patel
+            - Sam
+            - Dam
+        dateOfBirth:
+          type: string
+          format: date
+          examples:
+            - 2023-12-23
+        contactNumber:
+          type: string
+          examples:
+            - 123456345
+        address:
+          type: string
+          examples:
+            - 123,nepojik vslley, boston
+        adoptionPreferences:
+          type: object
+          properties:
+            ageRange:
+              type: array
+              examples:
+                - [3,9]
+              items:
+                type: integer
+                examples: 
+                  - 2
+              minItems: 2
+              maxItems: 2
+            
+            gender:
+              type: string
+              examples:
+                - Any
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Error code
+          examples:
+            - Invalid input
+        message:
+          type: string
+          description: Error message
+          examples:
+            - Invalid input

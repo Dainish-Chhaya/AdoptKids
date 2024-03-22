@@ -1,0 +1,14 @@
+{
+    "register": {
+      "title": "रजिस्टर करें",
+      "name": "नाम",
+      "username": "उपयोगकर्ता नाम",
+      "email": "ईमेल",
+      "password": "पासवर्ड",
+      "age": "आयु",
+      "gender": "लिंग",
+      "mobileNumber": "मोबाइल नंबर",
+      "registerButton": "रजिस्टर करें",
+      "ageValidation": "कृपया 21 से अधिक एक वैध आयु दर्ज करें।"
+    }
+  }

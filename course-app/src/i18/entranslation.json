@@ -1,0 +1,14 @@
+{
+    "register": {
+      "title": "Register",
+      "name": "Name",
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "age": "Age",
+      "gender": "Gender",
+      "mobileNumber": "Mobile Number",
+      "registerButton": "Register",
+      "ageValidation": "Please enter a valid age greater than 21."
+    }
+  }

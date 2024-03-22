@@ -1,0 +1,112 @@
+openapi: 3.0.0
+info:
+  title: User Authentication and Registration API
+  description: RESTful API for user authentication and registration
+  version: 1.0.0
+
+paths:
+  /api/auth/register:
+    post:
+      summary: Create a new user account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegistration'
+            example:
+              username: parth_mehta
+              password: secure_password
+              email: parth.mehta@example.com
+      responses:
+        '201':
+          description: User account created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              example:
+                userId: '123'
+                username: parth_mehta
+                email: parth.mehta@example.com
+        '400':
+          description: Bad request, invalid input
+          content:
+            application/json:
+              example: { error: 'Invalid input' }
+
+  /api/auth/login:
+    post:
+      summary: Authenticate and log in a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserLogin'
+            example:
+              username: parth_mehta
+              password: secure_password
+      responses:
+        '200':
+          description: User authenticated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              example:
+                userId: '123'
+                username: parth_mehta
+                email: parth.mehta@example.com
+        '401':
+          description: Unauthorized, invalid credentials
+          content:
+            application/json:
+              example: { error: 'Invalid credentials' }
+
+  /api/auth/getUser:
+    get:
+      summary: Get user details
+      responses:
+        '200':
+          description: User details retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              example:
+                userId: '123'
+                username: parth_mehta
+                email: parth.mehta@example.com
+
+components:
+  schemas:
+    UserRegistration:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+        email:
+          type: string
+          format: email
+
+    UserLogin:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+
+    User:
+      type: object
+      properties:
+        userId:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+          format: email

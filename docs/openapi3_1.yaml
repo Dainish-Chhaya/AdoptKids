@@ -1,0 +1,110 @@
+openapi: 3.1.0
+info:
+  title: Child Adoption System API
+  description: RESTful API for managing child adoption processes
+  version: '1.0.0'
+servers:
+  - url: http://localhost:8080
+
+paths:
+  /api/children:
+    get:
+      summary: Retrieve information about children
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Child"
+        '400':
+          description: Bad request, invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+              example: { error: 'Invalid input' }
+    post:
+      summary: Create a new child
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Child"
+            
+      responses:
+        '201':
+          description: Child created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Child"
+              
+        '400':
+          description: Bad request, invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+              example: { error: 'Invalid input' }
+
+components:
+  schemas:
+    Child:
+      type: object
+      properties:
+        childId:
+          type: string
+          examples:
+            - 342
+            - 456
+        firstName:
+          type: string
+          examples:
+            - Piyush
+        lastName:
+          type: string
+          examples:
+            - Chhoriya
+        dateOfBirth:
+          type: string
+          examples:
+            - 21/09/1998
+        gender:
+          type: string
+          examples:
+            - Male
+        healthStatus:
+          type: string
+          examples:
+            - Healthy
+        adoptionStatus:
+          type: string
+          examples:
+            - Adopted
+        ethnicity:
+          type: string
+          examples:
+            - Asian
+        specialNeeds:
+          type: boolean
+          examples:
+            - True
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Error code
+          examples:
+            - Invalid input
+        message:
+          type: string
+          description: Error message
+          examples:
+            - Invalid input
+
+

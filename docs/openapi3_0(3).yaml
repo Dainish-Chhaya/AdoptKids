@@ -1,0 +1,165 @@
+openapi: 3.1.0
+info:
+  title: Matching algorithm
+  description: RESTful API for scalable and efficient matching algorithm based on adoptive parent preferences and child characteristics.
+  version: 1.0.0
+  
+
+
+paths:
+  /api/matches:
+    post:
+      summary: Matching algorithm for finding potential matches of adopters (adoptive parents)
+      parameters: 
+        - name: ParentName
+          in: query
+          required: false
+          description: Name of Parent
+          schema:
+            type: integer
+        - name: Parent Age
+          in: query
+          required: false
+          description: Age of adoptive parents
+          schema:
+            type: integer
+       
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MatchRequest'
+            example: 
+              adoptiveParentId: '465'
+
+      responses:
+        '201':
+          description: Matching algorithm initiated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: '#/components/schemas/Match'
+
+        '400':
+          description: Bad request, invalid input
+          content:
+            application/json:
+              example: { error: 'Invalid input' }
+
+components:
+  schemas:
+    MatchRequest:
+      type: object
+      properties:
+        adopterId:
+          type: string
+          examples: 
+            - 123
+            - 134
+            - 234
+
+
+    MatchedParent:
+      type: object
+      properties:
+        parentId:
+          type: string
+          examples: 
+            - 453
+
+        firstName:
+          type: string
+          examples: 
+            - Satish
+        lastName:
+          type: string
+          examples: 
+            - Rao
+        dateOfBirth:
+          type: string
+          examples: 
+            - 12/06/1992
+        contactNumber:
+          type: string
+          examples: 
+            - 989865647
+        address:
+          type: string
+          examples: 
+            - 112,Boylston Street,Boston,MA
+        adoptionPreferences:
+          type: object
+          properties:
+            ageRange:
+              type: array
+              examples: 
+                - [25,45]
+              items:
+                type: integer
+              minItems: 2
+              maxItems: 2
+            gender:
+              type: string
+              examples: 
+                - Male
+
+    Match:
+      type: object
+      properties:
+        matchId:
+          type: string
+          examples: 
+            - 982
+        parents:
+          type: array
+          items:
+            $ref: '#/components/schemas/MatchedParent'
+        child:
+          $ref: '#/components/schemas/Child'
+
+    Child:
+      type: object
+      properties:
+        childId:
+          type: string
+          examples: 
+            - 875
+        firstName:
+          type: string
+          examples: 
+            - Daniel
+        lastName:
+          type: string
+          examples: 
+            - Peterson
+        age: 
+          type: integer  
+          examples: 
+            - 8
+
+        dateOfBirth:
+          type: string
+          examples: 
+            - 02/12/2000
+        gender:
+          type: string
+          examples: 
+            - Male
+        healthStatus:
+          type: string
+          examples: 
+            - Normal
+        adoptionStatus:
+          type: string
+          examples: 
+            - Available
+        ethnicity:
+          type: string
+          examples: 
+            - American
+        specialNeeds:
+          type: boolean
+          examples: 
+            - False

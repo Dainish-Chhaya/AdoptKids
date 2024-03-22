@@ -1,0 +1,171 @@
+ .homepage {
+  background-color: black;
+  color: white;
+  border: 0.7px solid white;
+  border-radius: 20px;
+  margin-top: 65px;
+}
+
+.background-video{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+hr{
+  margin: 0;
+}
+
+.AboutUsHomePage{
+  margin-top: 68px;
+  margin-right: 180px;
+  color: white;
+}
+
+.OurMissionHomePage{
+  display: flex;
+  margin-top: 63px;
+  margin-bottom: 40px;
+
+}
+
+.OurMission{
+  background-color: black !important;
+  color: white !important;
+  font-size: 60px !important;
+}
+
+.AboutUsHomePage p{
+  color: #cbc4c4 !important;
+}
+
+.ServicesHomePage{
+  background-color: black;
+  display: flex;
+  padding-left: 203px;
+  padding-right: 203px;
+}
+
+
+.ServicesCardHomePage{
+  margin-right: 10px;
+}
+
+.ServicesHomePageSection h2{
+  background-color: black !important;
+  color: white !important;
+  font-size: 60px;
+  text-align: center;
+}
+
+.card-text{
+  color: #cbc4c4 !important;
+}
+.TestimonialsHomePage{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.TestimonialsHomePage h2{
+  background-color: black !important;
+  color: white !important;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.ContactUsHomePage{
+  background-color: black !important;
+  color: white !important;
+  padding: 15px 191px 7px 198px;
+
+}
+
+.ContactUsHomePage h1{
+  font-size: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ContactUsHomePage input,textarea{
+  width: 500px;
+}
+
+.ContactUsHomePage form{
+  margin: "25px 85px 75px 100px";
+  color: "white";
+}
+
+.ContactUsHomePage label,input{
+  font-size: 20px;
+  color: white;
+  border-radius: 8px ;
+}
+
+.ContactUsHomePagebutton{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin-top: 20px;
+    width: 106px !important;
+    height: 42px !important;
+    text-align: center !important;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 0px !important;
+
+}
+
+.ContactUsHomePageTextArea{
+  width: 500px !important;
+  border-radius: 8px;
+}
+
+.flexContactUsHomePage{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ContactUsImageHomepage img{
+ border-radius: 15px;
+}
+
+.JoinTeamHomePageSection{
+  background-color: black;
+  color: white;
+  padding: 15px 191px 54px 198px;
+border-radius: 15px;
+}
+
+.flexJoinTeamHomePage{
+  display: flex;
+}
+.JoinTeamHomePageSection h2{
+  background-color: black !important;
+  color: white !important;
+  padding-bottom: 20px;
+  font-size: 60px;
+  text-align: center;
+
+}
+
+.JoinTeamHomePageSection p{
+  color: #cbc4c4 !important;
+}
+
+.JoinTeamHomePageSection h3{
+  color: white !important;
+}
+
+.text-jointeam-homepage{
+  margin-top: 20px;
+}
+
+.JoinTeamHomePageSection a{
+  border:1px solid white;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+}
