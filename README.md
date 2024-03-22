@@ -18,7 +18,7 @@ We strive to create a transparent and automated system that incorporates a profi
 1. Clone this repository:
  
 ```bash
-git clone https://github.com/info-6150-fall-2023/final-project-nidhi-patell.git
+git clone git@github.com:Dainish-Chhaya/AdoptKids.git
 ```
  
 2. Open the repository with Visual Studio or any other IDE.
@@ -47,7 +47,6 @@ node server.js
  
 For Contribution to the projects please submit a pull request. For major changes we would like to have a  discussion first.
  
-
  
 ## Team Members 
 Name: Dainish Chhaya
