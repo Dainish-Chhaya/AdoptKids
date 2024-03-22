@@ -51,8 +51,11 @@ For Contribution to the projects please submit a pull request. For major changes
  
 ## Team Members 
 Name: Dainish Chhaya
+
 Name: Aryan Sheth    
+
 Name: Nidhi Patel     
+
 Name: Piyush Chhoriya 
 
 
