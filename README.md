@@ -47,13 +47,13 @@ node server.js
  
 For Contribution to the projects please submit a pull request. For major changes we would like to have a  discussion first.
  
+
  
 ## Team Members 
 Name: Dainish Chhaya
 Name: Aryan Sheth    
 Name: Nidhi Patel     
 Name: Piyush Chhoriya 
-
 
 
 Object Model Diagram:
