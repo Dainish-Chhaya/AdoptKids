@@ -48,15 +48,9 @@ node server.js
 For Contribution to the projects please submit a pull request. For major changes we would like to have a  discussion first.
  
  
-## Team Members 
+## Have a query or would like to contribute please reach out to me:
 Name: Dainish Chhaya
-
-Name: Aryan Sheth    
-
-Name: Nidhi Patel     
-
-Name: Piyush Chhoriya 
-
+Email: chhaya.d@northeastern.edu
 
 Object Model Diagram:
 https://drive.google.com/file/d/1D-E70VM4PGXshjvsPE9mvul8gXEOQ_VW/view?usp=sharing 
