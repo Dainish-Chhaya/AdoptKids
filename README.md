@@ -45,10 +45,10 @@ node server.js
 
 ## Contributing
  
-For Contribution to the projects please submit a pull request. For major changes we would like to have a  discussion first.
+For Contribution to the projects please submit a pull request. For major changes we would like to have a discussion first.
  
  
-## Have a query or would like to contribute please reach out to me:
+## Have a query, pleae reach out to me:
 Name: Dainish Chhaya
 Email: chhaya.d@northeastern.edu
 
