@@ -50,6 +50,7 @@ For Contribution to the projects please submit a pull request. For major changes
  
 ## Have a query, pleae reach out to me:
 Name: Dainish Chhaya
+
 Email: chhaya.d@northeastern.edu
 
 
