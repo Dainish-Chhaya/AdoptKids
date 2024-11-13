@@ -52,10 +52,7 @@ For Contribution to the projects please submit a pull request. For major changes
 Name: Dainish Chhaya
 Email: chhaya.d@northeastern.edu
 
-Object Model Diagram:
-https://drive.google.com/file/d/1D-E70VM4PGXshjvsPE9mvul8gXEOQ_VW/view?usp=sharing 
 
-![Object Model Diagram](docs/ObjectModel.jpg)
 
 
 
